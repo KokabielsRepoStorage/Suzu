@@ -181,3 +181,12 @@ __**WARNING : this command may be outdated, it will be updated at some point**__
 adds the blacklist role to a user
 /blacklist user:b9ss
 __**WARNING : this command may be outdated, it will be updated at some point**__
+
+
+## If you plan on using this for heroku
+
+Add all of the config things into .env and change the status files to be uploaded to the database
+Why do you need to do this?
+
+__**After every start on heroku all files will revert to the files uploaded to github.**__
+__**Make sure you don't upload your : Bot token - gives access to use your bot for anything Minecraft email & password - gives access to your minecraft account api_key - can get your ability to access the hypixel api revoked, if someone uses it enough. Mongodb connect link - Full access to your database, and your login credentials for things that share the same credentials**__
