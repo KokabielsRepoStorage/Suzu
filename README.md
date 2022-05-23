@@ -14,7 +14,8 @@ __** Most of the bot is preset up for you not to have to do stuff **__
 To start off, open the terminal and run npm i to install dependencies
 
 __** This part is important **__
-![go to the config after this, and currently it should look like this :](https://cdn.discordapp.com/attachments/869842587836633148/978375559908306994/Screenshot_404.png)
+go to the config after this, and currently it should look like this :
+![](https://cdn.discordapp.com/attachments/869842587836633148/978375559908306994/Screenshot_404.png)
 
 for the token field go to discord.com/developers, and click new application.
 ![](https://cdn.discordapp.com/attachments/869842587836633148/978376647466172526/Screenshot_406_LI.jpg)
