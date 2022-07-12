@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "node index.js",
-        "setup": "npm i"
+        "setup" : "npm install",
+        "dev" : "node index.js",
+        "release" : "npm run setup && npm run dev"
     },
     "keywords": [],
     "author": "",
@@ -21,5 +22,8 @@
         "mineflayer": "^4.3.0",
         "mojang-api": "^0.0.2",
         "mongoose": "^6.3.4"
+    },
+    "devDependencies": {
+        "typescript": "^4.7.4"
     }
 }

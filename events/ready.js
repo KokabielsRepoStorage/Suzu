@@ -40,5 +40,5 @@ client.on("ready", () => {
     }    
 
     
-    roleClaim();
+    // roleClaim();
 });

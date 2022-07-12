@@ -15,8 +15,6 @@ module.exports = {
 
         var members = [];
 
-        console.log(guild.memberCount);
-
         const testing = guild.members.cache.map(member => members.id);
 
         guild.members.cache.forEach(member => {
@@ -26,8 +24,6 @@ module.exports = {
                     0
                 ]
             });
-
-            console.log(member.id);
         });
 
         const setupGuild = {
@@ -36,8 +32,6 @@ module.exports = {
         }
 
         await new guildSchema(setupGuild).save();
-
-        console.log('finished!');
     },
 
     update : async function updateGuild (guildID, members) {

@@ -29,12 +29,13 @@ module.exports = async (client) => {
     const eventFiles = await globPromise(`${process.cwd()}/events/*.js`);
     eventFiles.map((value) => require(value));
 
-    //Slash Commands
+    //Slash Commandsz
     const slashCommands = await globPromise(
         `${process.cwd()}/SlashCommands/*/*.js`
     );
-
+    
     const arrayOfSlashCommands = [];
+    var i = 0;
     slashCommands.map((value) => {
         const file = require(value);
         if (!file?.name) return;
@@ -42,7 +43,15 @@ module.exports = async (client) => {
 
         if (["MESSAGE", "USER"].includes(file.type)) delete file.description;
         arrayOfSlashCommands.push(file);
+        console.log(`|  ${file.name} | Loaded: ✅`);
+        i++;
     });
+    console.log('Loaded ' + i + ' files');
+
+    console.log(' ');
+    console.log(' ');
+    console.log(' ');
+    console.log(' ');
 
     //Ready
     client.once("ready", async () => {

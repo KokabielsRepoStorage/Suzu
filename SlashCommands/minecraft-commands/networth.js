@@ -46,11 +46,9 @@ function separator(numb) {
 const runNetworth = async function(uuid, key, interaction, user) {
     networth = await getNetworth(uuid, key);
 
-    if(networth == false) {
+    if(!networth) {
         return interaction.followUp(`Unable to get networth for ${user}`);
     }
-
-    console.log(networth.data.categories);
 
     data = networth.data
 
@@ -159,8 +157,6 @@ const getNetworth = async function (uuid, key) {
     var response = await axios.post('https://skyblock.acebot.xyz/api/networth/categories', { data: profile }).catch(err => {
         success = false;
     });
-
-    console.log(success);
 
     if(success == false) {
         response = await axios.post('https://maro.skybrokers.xyz/api/networth/categories', { data: profile }).catch(err => {

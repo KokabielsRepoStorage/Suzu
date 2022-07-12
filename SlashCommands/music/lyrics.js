@@ -63,7 +63,6 @@ module.exports = {
         const sendLyrics = (songTitle) => {
             return createResponse(songTitle)
                 .then((res) => {
-                    console.log({ res });
                     interaction.followUp(res);
                 })
                 .catch((err) => console.log(err));

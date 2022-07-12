@@ -68,7 +68,7 @@ module.exports = {
 
 function updateJson(activity, status) {
     
-    const json = JSON.parse(fs.readFileSync('./config.json', 'utf8'));
+    const json = JSON.parse(fs.readFileSync('./minecraft-handler/events/config.json', 'utf8'));
     json.activity = activity;
     json.status = status;
     fs.writeFileSync('./config.json', JSON.stringify(json, null, 2));
