@@ -1,7 +1,9 @@
 # Suzu
 # A bot that tries to do everything
-## Preword
 
+### This bot is no longer my main project for now. Currently I am working on my own custom language, and which will be my focus and might change this over. I will notify people in this readme if I restart working on this bot.
+
+## Preword
 __** This bot is a hobby project **__
 That means the bot might be updated frequently for a month, then not updated at all the next.
 
